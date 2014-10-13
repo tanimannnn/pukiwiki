@@ -1,0 +1,58 @@
+* モバイルWi-Fiルーターの考察 [#ua1b86d8]
+
+1. Pocket Wi-Fi GP02
+- スペック
+ 最大4.5時間
+ 下り最大 42Mbps
+ 110g
+ 5台 
+
+2. Pocket Wi-Fi GP03
+- スペック
+ 最大4時間
+ 下り最大 42Mbps
+ 128g
+ 12台
+
+3. Pocket Wi-Fi LTE GL01P
+- スペック
+ 最大9時間
+ 下り最大 75Mbps
+ 140g
+ 10台
+
+4. Pocket Wi-Fi　GL02P
+- スペック
+ メーカー	Any DATA
+ 外形寸法	約56(W)×18(D)×97(H)mm
+ 下り最大75Mbps 上り最大25Mbps
+ 質量	約123g（電池パック装着時）
+ バッテリー使用時間	約9時間（連続使用時）
+ 無線LAN規格	IEEE802.11b/g/n準拠、ARIB STD-T66準拠
+ 同時接続数	最大10台
+
+5. [[ULTRA Wi-Fi 101SI 4G:http://mb.softbank.jp/mb/data_com/product/mobilewifi/101si/]]
+- スペック
+ メーカー	Soft Bank
+ 外形寸法	約100(W)×64(D)×16.1(H)mm
+ 下り最大 76Mbps
+ 質量	約110g
+ 連続通信時間（本体）約 3.5時間＋（モバイルバッテリー）5.5時
+ 無線LAN規格	IEEE802.11b/g/n
+ 同時接続数	最大10台
+ 
+
+6. [[AtermWM3600R:http://121ware.com/product/atermstation/product/wimax/wm3600r/]]
+- 通信データ
+ 高速データ通信	：	WiMAX（ワイマックス）
+ 通信会社	：	UQコミュニケーションズ 
+ 通信方式	：	WiMAX（受信時最大42Mbps/送信時最大15.4Mbps）
+
+- スペック
+ メーカー	NEC
+ 外形寸法	約95(W)×70(D)×12.8(H)mm
+ 下り最大40Mbps 上り最大15.4Mbps
+ 質量	約120g（本体のみ・ACアダプタを除く）
+ バッテリー使用時間	約10時間（連続使用時）
+ 無線LAN規格	IEEE802.11b/g/nテクノロジー
+ 同時接続数	最大12台

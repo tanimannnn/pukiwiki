@@ -1,0 +1,28 @@
+* nvmのメモ [#ia7cf9c5]
+
+nvmを無事インストール出来たが、次回のログイン時に使えなくなっていた。
+
+ $ nvm
+ No command 'nvm' found, did you mean:
+ Command 'nvi' from package 'nvi' (universe)
+ Command 'pvm' from package 'pvm' (universe)
+ Command 'lvm' from package 'lvm2' (main)
+ Command 'vm' from package 'mgetty-voice' (universe)
+ Command 'nm' from package 'binutils' (main)
+ Command 'nm' from package 'binutils-multiarch' (universe)
+ Command 'kvm' from package 'qemu-kvm' (main)
+ nvm: command not found
+
+調べてみたら、どうやら毎回 nvm.shを読み込まなきゃ行けないよう。まじにか・・・
+
+ $ source .nvm/nvm.sh 
+ $ nvm ls
+    v0.6.1	   v0.6.11
+ current: 	
+ $ nvm use v0.6.11 
+ Now using node v0.6.11 
+ motani@www33198u:~$ nvm ls
+    v0.6.1	   v0.6.11
+ current: 	v0.6.11
+
+通常は.bashrcなんかに書くらしい

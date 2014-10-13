@@ -1,0 +1,33 @@
+[[iphone アプリ制作 メモ]]
+* わかった事など [#gad6eb19]
+-bounds.origin
+ bounds.origin.y+=20;
+この指定は、画面の上から20ほど下げる効果がある。通常、画面上には電波や時間などを
+表示するバーがあるため、その幅分下げる必要 がある。ちなみにbouds.origin.x+=20だと
+右に20ほどずれる。
+
+-bounds.size
+ bounds.size.height-=20;
+この指定は、bounds(?)のサイズを、高さ20ほど減らす効果がある。bounds.originの設定
+で表示位置を20ほど下げているため、下に余ってしまう部分を削っている。
+上記同様に、bounds.size.width-=20だと右側が20ほど削れる。
+
+-プロトコルとは
+ Javaで言うところのinterface。
+
+-CGRectってなに？
+実際に追加したファイルを読み込ませる際に以下のような記述がある。
+ CGRect bounds = [[UIScreen mainScreen] bounds];
+これはいったい何なのか？これは、「対象オブジェクトの位置とサイズの両方を管理するクラス」
+だそうだ。まぁ上でメモしたoriginやsizeなどの挙動を見れば納得。
+じゃあUIScreenはなんなのか。「UIScreenは画面サイズを取得したい場合に使用します」
+ ・bound (CGRect) ステータスバー領域を含む画面のサイズを返す 
+ （例）CGRect cr = [[UIScreen mainScreen] bounds];
+ ・applicationFrame (CGRect) ステータスバー領域を含まない画面のサイズを返す
+ （例）CGRect cr = [[UIScreen mainScreen] applicationFrame];
+これを見る限り、今のところapplicationFrameを使った方が簡単な気がする。
+
+
+* 未解決事件 [#o59e611e]
+-起動後のシミュレータが横になってしまい、戻せない件
+ help me...

@@ -1,0 +1,38 @@
+ * git [#qbc413cd]
++- nvmのインストール 
++nvm は Node Version Manager のことで、Node.js のインストール、バージョンごとの管理、シェルの環境設定をやってくれる。
++nvm を使うには Github のリポジトリをクローンする。
+ 
+  motani@www33198u:~$ git clone git://github.com/creationix/nvm.git ~/.nvm
+  Initialized empty Git repository in /home/motani/.nvm/.git/
+  remote: Counting objects: 323, done.
+  remote: Compressing objects: 100% (182/182), done.
+  remote: Total 323 (delta 172), reused 273 (delta 133) 
+  Receiving objects: 100% (323/323), 44.90 KiB, done. 
+  Resolving deltas: 100% (172/172), done.
+ 
++あとは nvm 本体を source すれば OK。
++ 
++ % source ~/.nvm/nvm.sh
++
++次にnvmを使ってNodeのインストール
++ motani@www33198u:~$ nvm install v0.6.12
++ ######################################################################## 100.0%
++ Checking for program g++ or c++          : not found  
++ Checking for program icpc                : not found 
++ Checking for program c++                 : not found 
++ /home/motani/.nvm/src/node-v0.6.12/wscript:261: error: could not configure a cxx compiler!
++ nvm: install v0.6.12 failed!
++
++oh...no...
++
++必要そうなパッケージをインストール
++ $ sudo apt-get install g++
++ 
++ motani@www33198u:~/public_html/testSpace$ sudo apt-get install openssl-devel
++ パッケージリストを読み込んでいます... 完了 
++ 依存関係ツリーを作成しています                
++ 状態情報を読み取っています... 完了
++ E: パッケージ openssl-devel が見つかりません
++ motani@www33198u:~/public_html/testSpace$ sudo apt-get install libssl-dev
++

@@ -1,0 +1,7 @@
+** Menu Bar [#t91c30bd]
+-[[oh wiki]]
+
+** あいうえお [#p0645131]
+
+#recent(20)
+&edit(MenuBar,noicon){edit};

@@ -1,0 +1,9 @@
+* BIOSの設定で分けのわからん項目について調べたときのメモ [#xc1ad7b2]
+- 参考になるサイト
+[[http://wincustomizing.client.jp/bios-abf.html]]
+
+| Limit CPUID Max.to 3 | これはCPUを識別するためのコードであるCPUID命令を制限するための項目。NT以前の古いOSではこの命令が4以上だと起動しない恐れがあるため、制限を有効にする「Enabled」に設定する。逆にXPやVistaでは必ず「Disabled」に設定すること。|
+| No-Excute Memory Protect | バッファオーバーフロー攻撃からシステムを守ってくれる「XD(excute Disabled)ビット」を有効にするかどうかを設定できる。この項目も基本的には「Enabled」にしておく。 |
+| CPU Enhanced Halt(ClE) | PCのアイドル時にCPUの動作クロックと電圧を下げて消費電力を抑えてくれる「CIEステート」の有効/無効を設定する項目。「Enabled」で有効となる。|
+| CPU Thermal Monitor 2(TM2) | 「Thermal Monitor 2」の有効/無効を切り替えられる。「Enabled」に設定しておくと、CPUの温度が異常に高くなった場合に、動作クロックや電圧を自動的に下げてCPUの破損を防いでくれる。|
+| CPU EIST Function| 拡張版インテルSpeedStepテクノロジー（EIST）の有効/無効を設定するための項目だ。有効にするとCPUの負荷に合わせて動作クロックや電圧を変化させられる。忘れずに「Enabled」に設定しておきたい。 |

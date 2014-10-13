@@ -1,0 +1,12 @@
+#freeze
+// :RenameLog (rename plugin)
+*2012-02-05 (日) 19:32:54 [#i68b85f3]
+-変更元ページを指定
+--From:[[FrontPage]]
+--To:[[備忘録]]
+-FrontPage→備忘録
+*2012-02-05 (日) 19:35:38 [#yd9651b8]
+-変更元ページを指定
+--From:[[備忘録]]
+--To:[[oh wiki]]
+-備忘録→oh wiki
